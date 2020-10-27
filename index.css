@@ -1,0 +1,61 @@
+html,
+body {
+    margin: 0px;
+    font-family: 'Orbitron', sans-serif;
+    background-color: #F7BD07;
+}
+
+h1, h3 {
+    text-align: center;
+    margin: 15px 0px;
+}
+
+h3:hover {
+    cursor: pointer;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 30px;
+    margin: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-container > div {
+    border-radius: 30px;
+    padding: 30px;
+    transition: all 0.1s linear;
+}
+
+.card-container > div > img{
+    width: 100%;
+    border-radius: 20px;
+}
+
+.card-container > div > h4, p {
+    text-align: center;
+}
+
+/* Hover on cards */
+.card-container > div:hover {
+    box-shadow:rgba(0,0,0,0.8) 0px 5px 15px, inset rgba(0,0,0,0.15) 0px -10px 20px;
+}
+
+/* Colors */
+.blue {
+    background: linear-gradient(to left bottom, #1e88cd, #00a3dd, #00b9ca, #00cb95, #1ed646);
+}
+
+.green {
+    background: linear-gradient(to left bottom, #35e710, #8fd200, #babb00, #d5a400, #e38e20);
+}
+
+.red {
+    background: linear-gradient(to left bottom, #fb96b9, #f37999, #e85a77, #da3a53, #c80e2e);
+}
+
+.purple {
+    background: linear-gradient(to left bottom, #7a0bc2, #8e57d2, #a588dd, #c1b6e3, #e3e3e3);
+}
